@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1a1010;
+    color: white;
+}
+
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#logo{
+    margin: 20px 37px;
+
+}
+
+#logo img{
+    margin: 1px 9px;
+
+    height: 60px;
+
+    width: 65px;
+
+    border-radius: 28px;
+    opacity: 0.86;
+
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+#navbar::before{
+    content: '';
+    background-color: rgba(46, 38, 38, 0.445);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.541);
+    color: black;
+}
+
+p{
+    color: white;
+}
+
+
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 568px ;
+
+}
+
+#home::before{
+    content: '';
+    background: url(../bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 650px;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.89;
+
+}
+
+
+.h-primary{
+    font-size: 3.7rem;
+    padding: 15px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.h-secondary{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    padding: 15px;
+    font-weight: bold;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border-radius: 2px solid white;
+    background-color: rgba(22, 20, 20, 0.548);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#home p{
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 29px;
+    background-color: #3814146e;
+
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section{
+    position: relative;
+}
+
+#clients img{
+    height: 124px;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#client-section::before{
+    content: '';
+    position: absolute;
+    background: url(../bg2.jpg);
+    width: 100%;
+    height: 256px;
+    z-index: -1;
+    opacity: 0.7;
+     
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../contact.jpg) no-repeat center center/cover;
+}
+
+footer{
+    background: #000;
+    color: blanchedalmond;
+    padding: 9px 20px;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.contact-box input, .contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+.contact-box form{
+    width: 40%;
+    font-weight: bold;
+    
+}
+.contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
